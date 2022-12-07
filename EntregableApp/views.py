@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from .models import *
 import datetime
+from django.http import HttpResponse
+
+def inicio (request):
+    dia=datetime.datetime.today()
+    return HttpResponse (f"Bienvenido! Ha ingresado al inicio del sistema web en el dia y hora: {dia}")
 
 def familia (request):
     padre=Familiares(nombre="Andres", apellido="Volpe", parentezco="padre", edad=58)

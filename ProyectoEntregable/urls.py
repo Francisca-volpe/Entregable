@@ -19,6 +19,6 @@ from EntregableApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("EntregableApp", include ("EntregableApp.urls.")),
-
+    path("", inicio),
+    path("familia/", familia),
 ]
