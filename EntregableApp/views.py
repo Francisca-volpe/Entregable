@@ -16,4 +16,4 @@ def familia (request):
     madre.save()
     hermano.save()
 
-    return render(request,"EntregableApp/template1.html", {"padre":padre, "madre":madre, "hermano":hermano})
+    return render(request,"EntregableApp/Template1.html", {"padre":padre, "madre":madre, "hermano":hermano})
